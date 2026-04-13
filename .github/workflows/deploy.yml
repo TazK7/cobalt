@@ -1,0 +1,16 @@
+# .github/workflows/deploy.yml
+name: Deploy to cPanel
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger cPanel Git Pull & Deploy
+        run: |
+          curl -s "https://${{ secrets.CPANEL_DOMAIN }}:2083/execute/VersionControl/update" \
+            -u "${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
+            --data-urlencode "repository_root=${{ secrets.CPANEL_REPO_DIR }}"
