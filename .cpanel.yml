@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/wineshopnear/public_html/cobalt
-    - /bin/cp -R * $DEPLOYPATH
+    - export DEPLOYPATH=/home/wineshopnear/public_html
+    - /bin/cp -R /home/wineshopnear/public_html/cobalt/* $DEPLOYPATH
