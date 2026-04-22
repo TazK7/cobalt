@@ -2,3 +2,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/wineshopnear/public_html
     - /bin/cp -R /home/wineshopnear/public_html/cobalt/* $DEPLOYPATH
+    - /bin/rm -rf $DEPLOYPATH/.git
+    - find $DEPLOYPATH -type f -exec chmod 644 {} \;
+    - find $DEPLOYPATH -type d -exec chmod 755 {} \;
