@@ -1,0 +1,244 @@
+{
+    "page": {
+        "title": "Lists",
+        "heading": "Lists"
+    },
+    "tasksOverview": {
+        "title": "Tasks Overview",
+        "subtitle": "Pending 10 tasks",
+        "items": [
+            {
+                "label": "Project Briefing",
+                "role": "Project Manager",
+                "icon": "ci-abstract-26",
+                "accent": "success"
+            },
+            {
+                "label": "Concept Design",
+                "role": "Art Director",
+                "icon": "ci-pencil",
+                "accent": "warning"
+            },
+            {
+                "label": "Functional Logics",
+                "role": "Lead Developer",
+                "icon": "ci-message-text-2",
+                "accent": "primary"
+            },
+            {
+                "label": "Development",
+                "role": "DevOps",
+                "icon": "ci-disconnect",
+                "accent": "danger"
+            },
+            {
+                "label": "Testing",
+                "role": "QA Managers",
+                "icon": "ci-security-user",
+                "accent": "info"
+            }
+        ]
+    },
+    "authors": {
+        "title": "Authors",
+        "people": [
+            {
+                "name": "Emma Smith",
+                "role": "Project Manager",
+                "avatar": "assets/media/avatars/300-6.jpg"
+            },
+            {
+                "name": "Sean Bean",
+                "role": "PHP, SQLite, Artisan CLI",
+                "avatar": "assets/media/avatars/300-5.jpg"
+            },
+            {
+                "name": "Brian Cox",
+                "role": "PHP, SQLite, Artisan CLI",
+                "avatar": "assets/media/avatars/300-11.jpg"
+            },
+            {
+                "name": "Francis Mitcham",
+                "role": "Lead Developer",
+                "avatar": "assets/media/avatars/300-9.jpg"
+            }
+        ]
+    },
+    "todo": {
+        "title": "Todo",
+        "items": [
+            {
+                "text": "Create FureStibe branding logo",
+                "checked": true,
+                "priority": "high",
+                "due": "2026-04-25"
+            },
+            {
+                "text": "Schedule a meeting with FireBear CTO John",
+                "checked": true,
+                "priority": "medium",
+                "due": "2026-04-23"
+            },
+            {
+                "text": "9 Degree Project Estimation",
+                "checked": false,
+                "priority": "low",
+                "due": "2026-05-02"
+            },
+            {
+                "text": "Dinner with Mike and Tony",
+                "checked": false,
+                "priority": "low",
+                "due": "2026-04-22"
+            },
+            {
+                "text": "Finalize AMCharts 9.3 Launch",
+                "checked": false,
+                "priority": "high",
+                "due": "2026-04-30"
+            },
+            {
+                "text": "Practice PHP foreach",
+                "checked": false,
+                "priority": "high",
+                "due": "2026-04-30"
+            }
+        ]
+    },
+    "notifications": {
+        "title": "Notifications",
+        "items": [
+            {
+                "id": "n1",
+                "icon": "ci-abstract-28",
+                "accent": "primary",
+                "title": "Project Alice",
+                "meta": "Phase 1 development",
+                "time": "1 hr"
+            },
+            {
+                "id": "n2",
+                "icon": "ci-shield",
+                "accent": "danger",
+                "title": "HR Confidential",
+                "meta": "Confidential staff documents",
+                "time": "2 hrs"
+            },
+            {
+                "id": "n3",
+                "icon": "ci-book-open",
+                "accent": "warning",
+                "title": "Company HR",
+                "meta": "Corporate staff profiles",
+                "time": "5 hrs"
+            },
+            {
+                "id": "n4",
+                "icon": "ci-chart",
+                "accent": "success",
+                "title": "Project Redux",
+                "meta": "New frontend architecture",
+                "time": "2 days"
+            },
+            {
+                "id": "n5",
+                "icon": "ci-bank",
+                "accent": "info",
+                "title": "Project Briefing",
+                "meta": "Product launch details",
+                "time": "21 Jan"
+            }
+        ]
+    },
+    "activityLogs": {
+        "title": "Activity Logs",
+        "entries": [
+            {
+                "type": "order",
+                "accent": "success",
+                "actor": "Emma Smith",
+                "text": "placed a new order for Metronic Admin",
+                "time": "Just now"
+            },
+            {
+                "type": "user",
+                "accent": "primary",
+                "actor": "Melody Macy",
+                "text": "signed up as a customer",
+                "time": "2 mins ago"
+            },
+            {
+                "type": "payment",
+                "accent": "warning",
+                "actor": "Max Smith",
+                "text": "completed a $430 payment for order #12300",
+                "time": "1 hr ago"
+            },
+            {
+                "type": "search",
+                "accent": "info",
+                "actor": "Sean Bean",
+                "text": "performed a search for 'authentication'",
+                "time": "2 hrs ago"
+            },
+            {
+                "type": "api",
+                "accent": "danger",
+                "actor": "system",
+                "text": "API connection to Stripe lost momentarily",
+                "time": "5 hrs ago"
+            },
+            {
+                "type": "backup",
+                "accent": "primary",
+                "actor": "system",
+                "text": "Database backup process completed",
+                "time": "2 days ago"
+            }
+        ]
+    },
+    "shoppingCart": {
+        "title": "Shopping Cart",
+        "currency": "USD",
+        "items": [
+            {
+                "sku": "INT-SRL-1",
+                "name": "Iblender",
+                "desc": "The best kitchen gadget in 2025",
+                "price": 350,
+                "qty": 1,
+                "image": "assets/media/stock/ecommerce/209.png"
+            },
+            {
+                "sku": "INT-SRL-2",
+                "name": "SmartCleaner",
+                "desc": "The best tool for your home",
+                "price": 650,
+                "qty": 3,
+                "image": "assets/media/stock/ecommerce/210.png"
+            },
+            {
+                "sku": "INT-SRL-3",
+                "name": "CameraMaxr",
+                "desc": "Professional camera for edge cases",
+                "price": 150,
+                "qty": 1,
+                "image": "assets/media/stock/ecommerce/214.png"
+            },
+            {
+                "sku": "INT-SRL-4",
+                "name": "MotionWire",
+                "desc": "Human interface for machines",
+                "price": 1450,
+                "qty": 1,
+                "image": "assets/media/stock/ecommerce/215.png"
+            }
+        ],
+        "summary": {
+            "subtotal": 2600,
+            "shipping": 0,
+            "tax": 210,
+            "total": 2810
+        }
+    }
+}

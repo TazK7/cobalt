@@ -1,0 +1,143 @@
+{
+  "page": {
+    "title": "Store Analytics",
+    "heading": "Store Analytics",
+    "period": { "from": "2026-03-22", "to": "2026-04-21" }
+  },
+  "kpis": [
+    {
+      "id": "onlineSales",
+      "label": "Total Online Sales",
+      "value": 22050,
+      "format": "currency",
+      "currency": "USD",
+      "change": { "pct":  2.2, "direction": "up",   "accent": "success" },
+      "chartTarget": "co_card_widget_8_chart"
+    },
+    {
+      "id": "onlineVisitors",
+      "label": "Total Online Visitors",
+      "value": 29420,
+      "format": "number",
+      "change": { "pct":  2.6, "direction": "up",   "accent": "success" },
+      "chartTarget": "co_card_widget_9_chart"
+    },
+    {
+      "id": "totalSales",
+      "label": "Total Sales",
+      "value": 1836,
+      "format": "number",
+      "change": { "pct":  2.2, "direction": "down", "accent": "danger" },
+      "goal":   { "current": 1048, "target": 1690, "pctComplete": 62 }
+    },
+    {
+      "id": "newCustomers",
+      "label": "Total New Customers",
+      "value": 6300,
+      "format": "number",
+      "heroes": [
+        { "initials": "A",  "accent": "warning", "tooltip": "Alan Warden" },
+        { "avatar": "assets/media/avatars/300-11.jpg", "tooltip": "Michael Eberon" },
+        { "initials": "S",  "accent": "primary", "tooltip": "Susan Redwood" },
+        { "avatar": "assets/media/avatars/300-2.jpg",  "tooltip": "Melody Macy"  }
+      ]
+    }
+  ],
+  "worldSales": {
+    "title": "World Sales",
+    "mapTarget": "co_maps_widget_1_map",
+    "byRegion": [
+      { "code": "US", "name": "United States", "sales": 8420, "visits": 12043 },
+      { "code": "GB", "name": "United Kingdom","sales": 3120, "visits":  5881 },
+      { "code": "DE", "name": "Germany",       "sales": 2040, "visits":  4210 },
+      { "code": "BR", "name": "Brazil",        "sales": 1750, "visits":  3912 },
+      { "code": "JP", "name": "Japan",         "sales": 1210, "visits":  2604 },
+      { "code": "IN", "name": "India",         "sales":  960, "visits":  4507 }
+    ]
+  },
+  "topCategories": {
+    "title": "Top Selling Categories",
+    "chartTarget": "co_charts_widget_13_chart",
+    "series": [
+      { "label": "Clothing",    "sales": 4280 },
+      { "label": "Electronics", "sales": 3150 },
+      { "label": "Toys",        "sales": 2160 },
+      { "label": "Sports",      "sales": 1890 },
+      { "label": "Books",       "sales": 1340 }
+    ]
+  },
+  "topProducts": {
+    "title": "Top Selling Products",
+    "rows": [
+      { "image": "assets/media/stock/600x400/img-1.jpg",  "name": "Elephant 1802",  "sku": "ELP-1802",  "sold": 1240, "revenue": 84210 },
+      { "image": "assets/media/stock/600x400/img-3.jpg",  "name": "RiseUP",         "sku": "RSE-0012",  "sold":  980, "revenue": 67430 },
+      { "image": "assets/media/stock/600x400/img-4.jpg",  "name": "Yellow Stone",   "sku": "YLS-0203",  "sold":  760, "revenue": 52180 },
+      { "image": "assets/media/stock/600x400/img-5.jpg",  "name": "Blue Pearl",     "sku": "BLP-4455",  "sold":  640, "revenue": 45020 },
+      { "image": "assets/media/stock/600x400/img-6.jpg",  "name": "Last Arrivals",  "sku": "LST-9901",  "sold":  520, "revenue": 37890 }
+    ]
+  },
+  "salesStatistics": {
+    "title": "Sales Statistics",
+    "chartTarget": "co_charts_widget_14_chart",
+    "series": [
+      { "label": "Jan", "sales":  8200, "visitors": 18400 },
+      { "label": "Feb", "sales":  9100, "visitors": 20230 },
+      { "label": "Mar", "sales": 11500, "visitors": 22840 },
+      { "label": "Apr", "sales": 14200, "visitors": 27110 }
+    ]
+  },
+  "visitsByCountry": {
+    "title": "Visits by Country",
+    "rows": [
+      { "country": "United States", "flag": "assets/media/flags/united-states.svg", "visits": 12043, "change":  4.2 },
+      { "country": "Brazil",        "flag": "assets/media/flags/brazil.svg",        "visits":  3912, "change":  1.8 },
+      { "country": "Germany",       "flag": "assets/media/flags/germany.svg",       "visits":  4210, "change":  2.7 },
+      { "country": "France",        "flag": "assets/media/flags/france.svg",        "visits":  3610, "change": -0.4 },
+      { "country": "India",         "flag": "assets/media/flags/india.svg",         "visits":  4507, "change":  5.9 },
+      { "country": "Japan",         "flag": "assets/media/flags/japan.svg",         "visits":  2604, "change":  0.9 },
+      { "country": "Spain",         "flag": "assets/media/flags/spain.svg",         "visits":  2189, "change": -1.2 },
+      { "country": "Sweden",        "flag": "assets/media/flags/sweden.svg",        "visits":  1320, "change":  0.3 },
+      { "country": "Turkey",        "flag": "assets/media/flags/turkey.svg",        "visits":  1108, "change":  2.1 }
+    ]
+  },
+  "socialNetworks": {
+    "title": "Social Network Visits",
+    "rows": [
+      { "network": "Facebook",  "icon": "assets/media/svg/brand-logos/facebook-3.svg",   "visits": 5820, "change":  3.4 },
+      { "network": "LinkedIn",  "icon": "assets/media/svg/brand-logos/linkedin-1.svg",   "visits": 3410, "change":  1.1 },
+      { "network": "Instagram", "icon": "assets/media/svg/brand-logos/instagram-2-1.svg","visits": 4950, "change":  6.2 },
+      { "network": "YouTube",   "icon": "assets/media/svg/brand-logos/youtube-3.svg",    "visits": 2180, "change": -0.8 },
+      { "network": "Pinterest", "icon": "assets/media/svg/brand-logos/pinterest-p.svg",  "visits":  940, "change":  0.5 },
+      { "network": "Telegram",  "icon": "assets/media/svg/brand-logos/telegram.svg",     "visits":  610, "change":  1.7 }
+    ]
+  },
+  "departments": {
+    "title": "Departments",
+    "chartTarget": "co_charts_widget_15_chart",
+    "series": [
+      { "label": "Sales",    "value": 42 },
+      { "label": "Marketing","value": 23 },
+      { "label": "Support",  "value": 18 },
+      { "label": "Dev",      "value": 17 }
+    ]
+  },
+  "visitsBySource": {
+    "title": "Visits by Source",
+    "rows": [
+      { "source": "Direct",  "visits": 8240, "pct": 38.4 },
+      { "source": "Search",  "visits": 6420, "pct": 29.9 },
+      { "source": "Social",  "visits": 3810, "pct": 17.7 },
+      { "source": "Referral","visits": 2040, "pct":  9.5 },
+      { "source": "Email",   "visits":  960, "pct":  4.5 }
+    ]
+  },
+  "authorSales": {
+    "title": "Author Sales",
+    "authors": [
+      { "name": "Emma Smith",      "avatar": "assets/media/avatars/300-6.jpg",  "sales": 8420, "growth":  3.4 },
+      { "name": "Sean Bean",       "avatar": "assets/media/avatars/300-5.jpg",  "sales": 6310, "growth":  1.2 },
+      { "name": "Brian Cox",       "avatar": "assets/media/avatars/300-11.jpg", "sales": 5140, "growth": -0.7 },
+      { "name": "Francis Mitcham", "avatar": "assets/media/avatars/300-9.jpg",  "sales": 4380, "growth":  2.1 }
+    ]
+  }
+}
