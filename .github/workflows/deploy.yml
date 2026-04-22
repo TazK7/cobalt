@@ -1,4 +1,3 @@
-# .github/workflows/deploy.yml
 name: Deploy to cPanel
 
 on:
@@ -9,12 +8,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger cPanel Git Pull & Deploy
+      - name: Deploy via cPanel API
         run: |
+          # Fetch latest
           curl -s "https://${{ secrets.CPANEL_DOMAIN }}:2083/execute/VersionControl/update" \
             -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
             --data-urlencode "repository_root=${{ secrets.CPANEL_REPO_DIR }}"
 
+          # Merge and deploy
+          curl -s "https://${{ secrets.CPANEL_DOMAIN }}:2083/execute/VersionControl/update" \
+            -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
+            --data-urlencode "repository_root=${{ secrets.CPANEL_REPO_DIR }}" \
+            --data-urlencode "branch=main"
+
+          # Trigger deployment
           curl -s "https://${{ secrets.CPANEL_DOMAIN }}:2083/execute/VersionControlDeployment/create" \
             -H "Authorization: cpanel ${{ secrets.CPANEL_USER }}:${{ secrets.CPANEL_TOKEN }}" \
             --data-urlencode "repository_root=${{ secrets.CPANEL_REPO_DIR }}"
